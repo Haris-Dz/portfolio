@@ -788,6 +788,33 @@ margin-left: -20px;
    filter: alpha(opacity=40);
    font-size: 16px;
 }
+//gallery
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;                 /* manji razmak */
+}
+
+.gallery a {
+  flex: 1 0 12%;            /* otprilike 8–9 slika u redu na većem ekranu */
+  max-width: 90px;          /* realna gornja granica veličine */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #e2e2e2;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+
+
 
 //SERVICES----------------------
 .services{
